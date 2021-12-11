@@ -15,7 +15,7 @@ public class MayorLongitudTest {
     void MayorLongitudTest1() throws EmptyCollectionException {
         Editor e = new Editor();
         ClassLoader classLoader = this.getClass().getClassLoader();
-        e.leerFichero(classLoader.getResource("fichero.txt").getPath());
+        e.leerFichero(classLoader.getResource("ficheroAA").getPath());
         String s = e.mayorLongitud();
         assertEquals("superultracañonesmodernos", s);
     }
