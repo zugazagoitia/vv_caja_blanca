@@ -71,17 +71,26 @@ public class NumPalabrasTest {
         assertEquals(3 ,e.numPalabras(11,14,"en"));
 
     }
+
     @Test
-    void numPalabrasTestCamino7 (){
+    void numPalabrasTestCamino7() {
 
         Editor e = new Editor();
         ClassLoader classLoader = this.getClass().getClassLoader();
         e.leerFichero(classLoader.getResource("fichero.txt").getPath());
 
-        assertEquals(0 ,e.numPalabras(11,14,"Europa"));
+        assertEquals(0, e.numPalabras(11, 14, "Europa"));
 
     }
 
+    @Test
+    void numPalabrasSinArgumentos() throws EmptyCollectionException {
+        Editor e = new Editor();
+        ClassLoader classLoader = this.getClass().getClassLoader();
+        e.leerFichero(classLoader.getResource("fichero.txt").getPath());
+
+        assertEquals(458, e.numPalabras());
+    }
 
 
 }
