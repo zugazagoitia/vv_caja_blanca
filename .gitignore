@@ -5,3 +5,9 @@ target/*
 .project
 .settings/
 bin/
+*.patch
+.idea/shelf/Uncommitted_changes_before_Update_at_11_12_2021_19_00__Changes_.xml
+.idea/workspace.xml
+.idea/encodings.xml
+.idea/encodings.xml
+.idea/workspace.xml

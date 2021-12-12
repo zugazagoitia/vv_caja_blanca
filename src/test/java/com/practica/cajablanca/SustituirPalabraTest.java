@@ -7,6 +7,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SustituirPalabraTest {
 
+	@Test
+	/**
+	 * Test Camino1 = 2, 21. Comprueba únicamente la arista 2->21
+	 */
+	void sustituirPalabraTestEditorSizeEmpty() {
+		Editor e = new Editor();
+
+		assertEquals(e.size(), 0);
+		e.sustituirPalabra("por", "en");
+		assertEquals(e.size(), 0);
+	}
 
 	@Test
 	/**
@@ -20,19 +31,6 @@ public class SustituirPalabraTest {
 		e.sustituirPalabra("por", "en");
 		assertEquals("[Con, diez, cañones, en, banda]", e.getLinea(1).toString()); //Llamo a toString porque el equals está mal hecho
 		assertEquals("[en, su, bravura, el, Temido]", e.getLinea(7).toString());
-	}
-
-	@Test
-	/**
-	 * Comprueba únicamente la arista 2->22
-	 */
-	void sustituirPalabraTest2() {
-		Editor e = new Editor();
-
-		assertEquals(e.size(), 0);
-		e.sustituirPalabra("por", "en");
-		assertEquals(e.size(), 0);
-
 	}
 
 }
