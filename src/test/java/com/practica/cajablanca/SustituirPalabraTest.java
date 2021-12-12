@@ -35,7 +35,7 @@ public class SustituirPalabraTest {
 	void sustituirPalabraTestListaSizeEmpty() {
 		e.leerFichero("src/test/resources/FicheroVacioConEspacio");
 		e.sustituirPalabra("por", "en");
-		assertEquals(e.size(), 1);
+		assertEquals(e.size(), 0);
 	}
 
 	@Test
@@ -46,7 +46,7 @@ public class SustituirPalabraTest {
 	void sustituirPalabraTestListaDosVecesSizeEmpty() {
 		e.leerFichero("src/test/resources/FicheroVacioCon2Espacios");
 		e.sustituirPalabra("por", "en");
-		assertEquals(e.size(), 2);
+		assertEquals(e.size(), 0);
 	}
 
 	@Test
